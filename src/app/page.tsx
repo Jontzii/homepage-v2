@@ -4,6 +4,7 @@ import AboutComponent from "@/app/components/aboutComponent";
 import ExperienceComponent from "@/app/components/experienceComponent";
 import BottomButton from "@/app/components/bottomButton";
 import { inter } from "@/app/components/fonts";
+import BottomText from "./components/bottomText";
 
 export default function Home() {
   return (
@@ -15,8 +16,9 @@ export default function Home() {
         <LandingComponent />
         <AboutComponent />
         <ExperienceComponent />
-        <BottomButton />
       </div>
+      <BottomButton />
+      <BottomText />
     </main>
   );
 }
