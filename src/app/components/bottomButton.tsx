@@ -35,7 +35,7 @@ export default function BottomButton() {
       } flex justify-end`}
     >
       <button
-        className="bg-teal-600 m-8 p-4 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 duration-300 motion-reduce:transition-none motion-reduce:hover:transform-none"
+        className="bg-teal-600 m-8 p-4 rounded-full transition ease-in-out delay-100 hover:-translate-y-1 duration-150 motion-reduce:transition-none motion-reduce:hover:transform-none"
         onClick={scrollToTop}
       >
         <ChevronUp />

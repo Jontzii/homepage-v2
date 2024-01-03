@@ -41,6 +41,14 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        inter: ["var(--font-inter)"],
+        rubik: ["var(--font-rubik)"],
+      },
+      screens: {
+        "3xl": "1800px",
+        "4xl": "2100px",
+      },
     },
   },
   plugins: [],
