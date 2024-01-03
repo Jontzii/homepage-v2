@@ -1,9 +1,16 @@
 import Image from "next/image";
+import LinkIconWrapper from "@/app/components/linkIconWrapper";
 import profilePic from "@/public/img/profilepic.webp";
+import IconGitHub from "@/app/assets/iconGithub";
+import IconInstagram from "@/app/assets/iconInstagram";
+import IconLinkedIn from "@/app/assets/iconLinkedIn";
 
-export default function InfoComponent() {
+export default function AboutComponent() {
   return (
-    <div id="about" className="w-full h-full text-center pt-24 pb-24 flex flex-col md:flex-row">
+    <div
+      id="about"
+      className="w-full h-full text-center pt-24 pb-24 flex flex-col md:flex-row"
+    >
       <div className="w-full md:w-2/5 h-full m-0 md:m-4 pl-0 md:pl-16 lg:pl-32 pr-0 md:pr-8 lg:pr-16 flex justify-center md:justify-end items-center md:items-end">
         <div className="h-3/5 sm:h-2/5 md:h-full lg:h-4/5 xl:h-3/5 2xl:h-3/5 3xl:h-1/2 4xl:h-1/3 w-3/5 sm:w-2/5 md:w-full lg:w-4/5 xl:w-3/5 2xl:w-3/5 3xl:w-1/2 4xl:w-1/2 overflow-hidden rounded-full">
           <Image
@@ -26,6 +33,31 @@ export default function InfoComponent() {
           and quickly grasping new technologies as required. Currently, I am
           interested in expanding my expertise in cloud technologies.
         </p>
+        <div className="pt-8">
+          <p className="text-sm md:text-md lg:text-lg 2xl:text-xl 3xl:text-3xl">
+            Lets get in touch
+          </p>
+          <div className="flex flex-row justify-center md:justify-start">
+            <LinkIconWrapper
+              params={{
+                href: "https://www.github.com/jontzii",
+                icon: <IconGitHub />,
+              }}
+            />
+            <LinkIconWrapper
+              params={{
+                href: "https://www.linkedin.com/in/joohiltunen/",
+                icon: <IconLinkedIn />,
+              }}
+            />
+            <LinkIconWrapper
+              params={{
+                href: "https://www.instagram.com/jontzii",
+                icon: <IconInstagram />,
+              }}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

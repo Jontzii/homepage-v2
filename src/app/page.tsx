@@ -1,7 +1,7 @@
 import CursorComponent from "@/app/components/cursorComponent";
 import LandingComponent from "@/app/components/landingComponent";
-import InfoComponent from "@/app/components/infoComponent";
-import DetailsComponent from "@/app/components/detailsComponent";
+import AboutComponent from "@/app/components/aboutComponent";
+import ExperienceComponent from "@/app/components/experienceComponent";
 import BottomButton from "@/app/components/bottomButton";
 import { inter } from "@/app/components/fonts";
 
@@ -13,10 +13,10 @@ export default function Home() {
         className={`w-full h-full flex flex-col items-center justify-between ${inter.variable} font-inter`}
       >
         <LandingComponent />
-        <InfoComponent />
-        <DetailsComponent />
+        <AboutComponent />
+        <ExperienceComponent />
+        <BottomButton />
       </div>
-      <BottomButton />
     </main>
   );
 }
