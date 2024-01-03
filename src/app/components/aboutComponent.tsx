@@ -2,7 +2,6 @@ import Image from "next/image";
 import LinkIconWrapper from "@/app/components/linkIconWrapper";
 import profilePic from "@/public/img/profilepic.webp";
 import IconGitHub from "@/app/assets/iconGithub";
-import IconInstagram from "@/app/assets/iconInstagram";
 import IconLinkedIn from "@/app/assets/iconLinkedIn";
 
 export default function AboutComponent() {
@@ -48,12 +47,6 @@ export default function AboutComponent() {
               params={{
                 href: "https://www.linkedin.com/in/joohiltunen/",
                 icon: <IconLinkedIn />,
-              }}
-            />
-            <LinkIconWrapper
-              params={{
-                href: "https://www.instagram.com/jontzii",
-                icon: <IconInstagram />,
               }}
             />
           </div>
