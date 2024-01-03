@@ -17,9 +17,6 @@ export const workDescription = () => {
           "React",
           "PostgreSQL",
           "Azure",
-          "React",
-          "PostgreSQL",
-          "Azure",
         ],
       },
       nomicam1: {

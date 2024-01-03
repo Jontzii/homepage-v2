@@ -36,7 +36,7 @@ export default function LandingComponent() {
         </div>
       </div>
 
-      <div className="w-full absolute bottom-8 flex justify-center items-center text-slate-400">
+      <div className="w-full absolute bottom-32 md:bottom-8 flex justify-center items-center text-slate-400">
         <ScrollToAbout />
       </div>
     </div>
