@@ -8,10 +8,10 @@ export default function ExperienceComponent() {
   const workExperience = workDescription();
 
   return (
-    <div className="w-full h-full text-center justify-center flex flex-col md:flex-row">
-      <div className="w-full md:w-1/2 p-4 flex justify-end">
-        <div className="w-full md:w-3/5 mr-0 md:mr-16 flex flex-col ">
-          <p className="text-sm md:text-md lg:text-lg 2xl:text-xl 3xl:text-3xl pb-4">
+    <div className="w-full h-full text-center justify-center flex flex-col lg:flex-row">
+      <div className="w-full lg:w-1/2 p-4 flex justify-center lg:justify-end">
+        <div className="w-full md:w-4/5 lg:w-full xl:w-4/5 2xl:w-3/5 mr-0 lg:ml-8 lg:mr-4 xl:ml-16 xl:mr-16 flex flex-col">
+          <p className="text-md lg:text-lg 2xl:text-xl 3xl:text-3xl pb-4">
             Work experience
           </p>
           <ExperienceBox params={{ content: workExperience.work.vincit }} />
@@ -20,9 +20,9 @@ export default function ExperienceComponent() {
           <ExperienceBox params={{ content: workExperience.work.nomicam3 }} />
         </div>
       </div>
-      <div className="w-full md:w-1/2 p-4 flex justify-start">
-        <div className="w-full md:w-1/2 ml-0 md:ml-16 flex flex-col ">
-          <p className="text-sm md:text-md lg:text-lg 2xl:text-xl 3xl:text-3xl text-bold pb-4">
+      <div className="w-full lg:w-1/2 p-4 flex justify-center lg:justify-start">
+        <div className="w-full md:w-4/5 lg:w-full xl:w-4/5 2xl:w-3/5 ml-0 lg:ml-4 lg:mr-8 xl:ml-16 xl:mr-16 flex flex-col">
+          <p className="text-md lg:text-lg 2xl:text-xl 3xl:text-3xl text-bold pb-4">
             Education
           </p>
           <EducationBox
@@ -32,7 +32,7 @@ export default function ExperienceComponent() {
             params={{ content: workExperience.education.bachelors }}
           />
 
-          <p className="text-sm md:text-md lg:text-lg 2xl:text-xl 3xl:text-3xl pt-8 pb-4">
+          <p className="text-md lg:text-lg 2xl:text-xl 3xl:text-3xl pt-8 pb-4">
             Hobbies / Other Interests
           </p>
           <HobbyBox params={{ content: workExperience.other.hobbies }} />

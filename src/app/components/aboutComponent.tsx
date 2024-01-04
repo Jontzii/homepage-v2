@@ -8,47 +8,50 @@ export default function AboutComponent() {
   return (
     <div
       id="about"
-      className="w-full h-full text-center pt-24 pb-24 flex flex-col md:flex-row"
+      className="w-full h-full text-center pt-12 lg:pt-24 pb-12 lg:pb-24 flex flex-col lg:flex-row justify-center items-center"
     >
-      <div className="w-full md:w-2/5 h-full m-0 md:m-4 pl-0 md:pl-16 lg:pl-32 pr-0 md:pr-8 lg:pr-16 flex justify-center md:justify-end items-center md:items-end">
-        <div className="h-3/5 sm:h-2/5 md:h-full lg:h-4/5 xl:h-3/5 2xl:h-3/5 3xl:h-1/2 4xl:h-1/3 w-3/5 sm:w-2/5 md:w-full lg:w-4/5 xl:w-3/5 2xl:w-3/5 3xl:w-1/2 4xl:w-1/2 overflow-hidden rounded-full">
-          <Image
-            src={profilePic}
-            alt="Picture of Joonas Hiltunen"
-            placeholder="blur"
-            priority
-          />
+      <div className="w-full lg:w-1/2 p-4 flex justify-center lg:justify-end">
+        <div className="-full md:w-4/5 lg:w-full xl:w-4/5 2xl:w-4/5 mr-0 lg:ml-8 lg:mr-4 xl:ml-16 xl:mr-16 flex flex-row justify-center">
+          <div className="w-2/3 overflow-hidden rounded-full">
+            <Image
+              src={profilePic}
+              alt="Picture of Joonas Hiltunen"
+              placeholder="blur"
+              priority
+            />
+          </div>
         </div>
       </div>
-      <div
-        className={`w-full md:w-4/5 xl:w-3/5 3xl:w-2/5 h-full p-4 pt-8 md:pt-0 md:pl-8 md:pr-16 lg:pr-16 m-0 md:m-auto text-center md:text-left items-center`}
-      >
-        <p className="text-sm md:text-md lg:text-lg 2xl:text-xl 3xl:text-3xl">
-          My name is Joonas Hiltunen, but I&apos;m also known as
-          &quot;Jontzi&quot; online. I am a versatile full-stack software
-          developer with around five years of comprehensive experience in
-          various projects, from small one-man apps to large enterprise
-          software. I excel in C# and JS/TS-based projects while being adaptable
-          and quickly grasping new technologies as required. Currently, I am
-          interested in expanding my expertise in cloud technologies.
-        </p>
-        <div className="pt-8">
+      <div className="w-full lg:w-1/2 p-4 flex justify-center lg:justify-start">
+        <div className="w-full md:w-4/5 lg:w-full xl:w-4/5 4xl:w-3/5 ml-0 lg:ml-4 lg:mr-8 xl:ml-16 xl:mr-16 flex flex-col justify-center lg:text-left">
           <p className="text-sm md:text-md lg:text-lg 2xl:text-xl 3xl:text-3xl">
-            Lets get in touch
+            My name is Joonas Hiltunen, but I&apos;m also known as
+            &quot;Jontzi&quot; online. I am a versatile full-stack software
+            developer with around five years of comprehensive experience in
+            various projects, from small one-man apps to large enterprise
+            software. I excel in C# and JS/TS-based projects while being
+            adaptable and quickly grasping new technologies as required.
+            Currently, I am interested in expanding my expertise in cloud
+            technologies.
           </p>
-          <div className="flex flex-row justify-center md:justify-start">
-            <LinkIconWrapper
-              params={{
-                href: "https://www.github.com/jontzii",
-                icon: <IconGitHub />,
-              }}
-            />
-            <LinkIconWrapper
-              params={{
-                href: "https://www.linkedin.com/in/joohiltunen/",
-                icon: <IconLinkedIn />,
-              }}
-            />
+          <div className="pt-8 flex flex-col justify-center lg:justify-start">
+            <p className="text-sm md:text-md lg:text-lg 2xl:text-xl 3xl:text-3xl">
+              Lets get in touch
+            </p>
+            <div className="flex justify-center lg:justify-start">
+              <LinkIconWrapper
+                params={{
+                  href: "https://www.github.com/jontzii",
+                  icon: <IconGitHub />,
+                }}
+              />
+              <LinkIconWrapper
+                params={{
+                  href: "https://www.linkedin.com/in/joohiltunen/",
+                  icon: <IconLinkedIn />,
+                }}
+              />
+            </div>
           </div>
         </div>
       </div>

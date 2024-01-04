@@ -46,7 +46,7 @@ export default function ExperienceBox({
         {params.content.technologies.map((x) => (
           <p
             key={`${x}-${makeId(5)}`}
-            className="pl-3 pr-3 pt-1 pb-1 bg-teal-500 m-1 rounded-full text-slate-900 transition ease-in-out hover:-translate-y-1 duration-300 motion-reduce:transition-none motion-reduce:hover:transform-none"
+            className="pl-3 pr-3 pt-1 pb-1 bg-teal-500 m-1 rounded-full text-slate-900 transition-none lg:transition ease-in-out hover:transform-none lg:hover:-translate-y-1 duration-300 motion-reduce:transition-none motion-reduce:hover:transform-none"
           >
             {x}
           </p>
