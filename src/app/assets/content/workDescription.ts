@@ -17,7 +17,9 @@ export const workDescription = () => {
           "TypeScript",
           "React",
           "PostgreSQL",
+          "Entity Framework",
           "Azure",
+          "Docker",
         ],
       },
       nomicam1: {
@@ -29,7 +31,14 @@ export const workDescription = () => {
           "- Implemented improvements and bugfixes for NomiCam's MIP",
           "- Developed plugins for NomiCam's MIP software using C#",
         ],
-        technologies: ["C#", ".NET Framework", "TypeScript", "React", "Azure"],
+        technologies: [
+          "C#",
+          ".NET Framework",
+          "TypeScript",
+          "React",
+          "Azure",
+          "Docker",
+        ],
       },
       nomicam2: {
         company: "NomiCam Oy",
@@ -40,7 +49,7 @@ export const workDescription = () => {
           "- Build a remote control for an industrial robot using .NET Core",
           "- Developed plugins for NomiCam's MIP software using C#",
         ],
-        technologies: ["C#", "C++", ".NET Framework"],
+        technologies: ["C#", "C++", ".NET Framework", "Docker"],
       },
       nomicam3: {
         company: "NomiCam Oy",
