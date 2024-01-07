@@ -1,8 +1,8 @@
-import ExperienceBox from "@/app/components/experienceBox";
-import { workDescription } from "../assets/content/workDescription";
-import EducationBox from "./educationBox";
-import HobbyBox from "./hobbyBox";
 import Link from "next/link";
+import ExperienceBox from "@/app/components/experience/experienceBox";
+import EducationBox from "@/app/components/experience/educationBox";
+import HobbyBox from "@/app/components/experience/hobbyBox";
+import { workDescription } from "@/app/assets/content/workDescription";
 
 export default function ExperienceComponent() {
   const workExperience = workDescription();
@@ -39,7 +39,7 @@ export default function ExperienceComponent() {
 
           <p className="text-sm md:text-md lg:text-lg 2xl:text-xl 3xl:text-3xl pt-8">
             <Link
-              href="/Resume.pdf"
+              href="/resume.pdf"
               aria-description=""
               target="_blank"
               className="text-teal-500 selection:text-slate-900"

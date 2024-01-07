@@ -1,5 +1,5 @@
-import { inter, rubik } from "@/app/components/fonts";
-import ScrollToAbout from "@/app/components/scrollToAbout";
+import { inter, rubik } from "@/app/components/common/fonts";
+import ScrollToAbout from "@/app/components/landing/scrollToAbout";
 
 export default function LandingComponent() {
   const emphasizeWord = "text-teal-500 font-bold selection:text-slate-900";

@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react";
-import ChevronUp from "@/app/assets/chevronUp";
+import ChevronUp from "@/app/assets/icon/chevronUp";
 
 export default function BottomButton() {
   const [visible, setVisible] = useState(false);

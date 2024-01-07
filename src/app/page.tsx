@@ -1,10 +1,10 @@
-import CursorComponent from "@/app/components/cursorComponent";
-import LandingComponent from "@/app/components/landingComponent";
-import AboutComponent from "@/app/components/aboutComponent";
-import ExperienceComponent from "@/app/components/experienceComponent";
-import BottomButton from "@/app/components/bottomButton";
-import { inter } from "@/app/components/fonts";
-import BottomText from "./components/bottomText";
+import CursorComponent from "@/app/components/common/cursorComponent";
+import LandingComponent from "@/app/components/landing/landingComponent";
+import AboutComponent from "@/app/components/about/aboutComponent";
+import ExperienceComponent from "@/app/components/experience/experienceComponent";
+import BottomButton from "@/app/components/common/bottomButton";
+import BottomText from "./components/common/bottomText";
+import { inter } from "@/app/components/common/fonts";
 
 export default function Home() {
   return (

@@ -1,8 +1,8 @@
 import Image from "next/image";
-import LinkIconWrapper from "@/app/components/linkIconWrapper";
+import LinkIconWrapper from "@/app/components/about/linkIconWrapper";
 import profilePic from "@/public/img/profilepic.webp";
-import IconGitHub from "@/app/assets/iconGithub";
-import IconLinkedIn from "@/app/assets/iconLinkedIn";
+import IconGitHub from "@/app/assets/icon/iconGithub";
+import IconLinkedIn from "@/app/assets/icon/iconLinkedIn";
 
 export default function AboutComponent() {
   return (
