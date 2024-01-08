@@ -23,7 +23,7 @@ export const workDescription = () => {
         ],
       },
       nomicam1: {
-        company: "NomiCam Oy (now part of Ring)",
+        company: "NomiCam Oy (now part of Amazon Ring)",
         title: "Software Developer",
         years: "2020-2022",
         description: [
