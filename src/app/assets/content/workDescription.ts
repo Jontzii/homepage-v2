@@ -9,7 +9,7 @@ export const workDescription = () => {
           "Worked at a well-known company in the energy sector developing a Customer Information System for energy companies",
           "- Worked on the reporting module of the customer's flagship CIS product",
           "- Worked on modifying the module for a new foreign market",
-          "- Developed a cutting edge reporting microservice for customer's new software product",
+          "- Developed a cutting-edge reporting microservice for a customer's new software product",
         ],
         technologies: [
           "C#",
