@@ -30,9 +30,9 @@ export default function AboutComponent() {
             developer with around five years of comprehensive experience in
             various projects, from small one-man apps to large enterprise
             software. I excel in C# and JS/TS-based projects while being
-            adaptable and quickly grasping new technologies as required.
-            Currently, I am interested in expanding my expertise in cloud
-            technologies.
+            adaptable and quickly grasping new technologies as required. In the
+            future, I am interested in taking on a more significant role in some
+            larger projects and in expanding my expertise in cloud technologies.
           </p>
           <div className="pt-8 flex flex-col justify-center lg:justify-start">
             <p className="text-sm md:text-md lg:text-lg 2xl:text-xl 3xl:text-3xl">

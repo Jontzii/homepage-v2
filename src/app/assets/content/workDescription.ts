@@ -6,7 +6,7 @@ export const workDescription = () => {
         title: "Software Developer",
         years: "2022-present",
         description: [
-          "Worked at a well-known company in the energy sector developing a Customer Information System for energy companies",
+          "I worked for a well-known company in the energy sector, developing a customer information system used by many of Finland's largest energy companies.",
           "- Worked on the reporting module of the customer's flagship CIS product",
           "- Worked on modifying the module for a new foreign market",
           "- Developed a cutting-edge reporting microservice for a customer's new software product",
