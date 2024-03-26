@@ -37,7 +37,7 @@ export default function ExperienceBox({
 
           return (
             <p key={`${x}-${i}-${makeId(5)}`} className={className}>
-              {x}
+              {x === "\n" ? <br /> : x}
             </p>
           );
         })}
