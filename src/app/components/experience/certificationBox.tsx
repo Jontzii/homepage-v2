@@ -1,6 +1,6 @@
+import Link from "next/link";
 import ExternalLink from "@/app/assets/icon/externalLink";
 import { Certification } from "@/app/types/experienceType";
-import Link from "next/link";
 
 export default function CertificationBox({
   params,
@@ -18,13 +18,15 @@ export default function CertificationBox({
         <p className="pl-0 pb-2 text-slate-400">
           Credential ID {params.content.credentialId}
         </p>
-        <div className="pl-0 pb-2">
+        <div className="pl-0 pt-2 pb-2">
           <Link
             href={{ pathname: params.content.url }}
             target="_blank"
-            className="pl-3 pr-3 pt-1 pb-1 flex flex-row w-48 bg-teal-500 m-1 ml-0 rounded-full text-slate-900 transition-none lg:transition ease-in-out hover:transform-none lg:hover:-translate-y-1 duration-300 motion-reduce:transition-none motion-reduce:hover:transform-none"
+            className="pl-3 pr-3 pt-1 pb-1 flex flex-row w-52 bg-teal-500 hover:bg-teal-600 hover:text-slate-300 m-1 ml-0 rounded-full text-slate-900"
           >
-            <p className="h-8 flex flex-row items-center">Show credentials</p>
+            <p className="h-8 pl-2 flex flex-row items-center">
+              Show credentials
+            </p>
 
             <div className="w-8 h-8 flex flex-row items-center justify-center ml-auto">
               <ExternalLink />

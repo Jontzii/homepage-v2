@@ -4,6 +4,7 @@ import EducationBox from "@/app/components/experience/educationBox";
 import HobbyBox from "@/app/components/experience/hobbyBox";
 import { workDescription } from "@/app/assets/content/workDescription";
 import CertificationBox from "./certificationBox";
+import ProjectBox from "./projectBox";
 
 export default function ExperienceComponent() {
   const workExperience = workDescription();
@@ -42,6 +43,16 @@ export default function ExperienceComponent() {
           />
 
           <p className="text-md lg:text-lg 2xl:text-xl 3xl:text-3xl pt-8 pb-4">
+            Other Projects
+          </p>
+          <ProjectBox
+            params={{ content: workExperience.project.flightrandomizer }}
+          />
+          <ProjectBox
+            params={{ content: workExperience.project.getaroom }}
+          />
+
+          <p className="text-md lg:text-lg 2xl:text-xl 3xl:text-3xl pt-8 pb-4">
             Hobbies / Other Interests
           </p>
           <HobbyBox params={{ content: workExperience.other.hobbies }} />
@@ -51,7 +62,7 @@ export default function ExperienceComponent() {
               href="/resume.pdf"
               aria-description=""
               target="_blank"
-              className="text-teal-500 selection:text-slate-900"
+              className="text-teal-500 hover:text-slate-300 selection:text-slate-900"
             >
               You can view my full resume here
             </Link>

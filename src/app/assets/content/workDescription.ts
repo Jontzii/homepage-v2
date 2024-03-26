@@ -98,6 +98,46 @@ export const workDescription = () => {
         url: "https://learn.microsoft.com/api/credentials/share/en-us/JoonasHiltunen-2330/413A181C942BAC00?sharingId",
       },
     },
+    project: {
+      flightrandomizer: {
+        name: "Flight randomizer",
+        description: [
+          "A simple tool for selecting a random flight from an airport",
+          "- Created using Next.js with TypeScript and Chakra UI library",
+          "- Utilises data from FlightRadar24 APIs for finding airports and flights",
+          "- Deployed using Vercel",
+        ],
+        url: "https://flights.jontzi.com",
+        git: "https://github.com/Jontzii/FlightRandomizer",
+        technologies: [
+          "React",
+          "TypeScript",
+          "Next.js",
+          "Node.js",
+          "Chakra UI",
+          "Vercel",
+        ],
+      },
+      getaroom: {
+        name: "Get a Room!",
+        description: [
+          "A progressive web app for booking a meeting room on the fly.",
+          "- Utilises Google Workspace and Google Calendar APIs",
+          "- Can be deployed for any organisation using Google Calendar",
+          "- Deployed to Google Cloud Run",
+        ],
+        url: "https://getaroom.vincit.com",
+        git: "https://github.com/Vincit/get-a-room",
+        technologies: [
+          "React",
+          "Node.js",
+          "TypeScript",
+          "MUI",
+          "Google Cloud",
+          "Docker",
+        ],
+      },
+    },
     other: {
       interests: ["Cloud Computing", "Cloud Architecture"],
       hobbies: ["Gaming", "Aviation", "Movies", "Badminton"],

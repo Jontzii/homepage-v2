@@ -6,10 +6,11 @@ export default function ExperienceBox({
   params: {
     content: WorkExperience;
   };
-  }) {
+}) {
   const makeId = (length: number) => {
-    let result = '';
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let result = "";
+    const characters =
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
     const charactersLength = characters.length;
     let counter = 0;
     while (counter < length) {
@@ -17,9 +18,8 @@ export default function ExperienceBox({
       counter += 1;
     }
     return result;
-}
+  };
 
-  
   return (
     <div className="rounded p-4 mt-4 mb-4 border-2 border-slate-400 w-full flex flex-col hover:border-teal-500">
       <div className="flex flex-col text-left">

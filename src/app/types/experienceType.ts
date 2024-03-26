@@ -21,3 +21,11 @@ export interface Certification {
   credentialId: string;
   url: string;
 }
+
+export interface Project {
+  name: string;
+  description: string[];
+  url: string;
+  git: string;
+  technologies: string[];
+}
