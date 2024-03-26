@@ -13,3 +13,19 @@ export interface EducationExperience {
   major: string;
   subject: string;
 }
+
+export interface Certification {
+  name: string;
+  issuer: string;
+  issued: string;
+  credentialId: string;
+  url: string;
+}
+
+export interface Project {
+  name: string;
+  description: string[];
+  url: string;
+  git: string;
+  technologies: string[];
+}
