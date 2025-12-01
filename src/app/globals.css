@@ -1,6 +1,60 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --color-mirage-50: #edf2f5;
+  --color-mirage-100: #dae4eb;
+  --color-mirage-200: #a7bbc9;
+  --color-mirage-300: #7b92a8;
+  --color-mirage-400: #374c69;
+  --color-mirage-500: #0e172a;
+  --color-mirage-600: #0b1224;
+  --color-mirage-700: #080e1f;
+  --color-mirage-800: #050a1a;
+  --color-mirage-900: #030612;
+  --color-mirage-950: #01040d;
+
+  --color-scooter-50: #f5fcfc;
+  --color-scooter-100: #e8f9fa;
+  --color-scooter-200: #c9f0f2;
+  --color-scooter-300: #abe5eb;
+  --color-scooter-400: #74d1db;
+  --color-scooter-500: #43bccd;
+  --color-scooter-600: #37a2b8;
+  --color-scooter-700: #267e99;
+  --color-scooter-800: #185d7a;
+  --color-scooter-900: #0e3f5c;
+  --color-scooter-950: #06243b;
+
+  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+  --background-image-gradient-conic: conic-gradient(
+    from 180deg at 50% 50%,
+    var(--tw-gradient-stops)
+  );
+
+  --font-inter: var(--font-inter);
+  --font-rubik: var(--font-rubik);
+
+  --breakpoint-3xl: 1800px;
+  --breakpoint-4xl: 2100px;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;

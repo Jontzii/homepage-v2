@@ -8,7 +8,7 @@ export async function EducationBox({
   };
 }) {
   return (
-    <div className="rounded p-4 mt-4 mb-4 border-2 border-slate-400 w-full flex flex-col hover:border-teal-500">
+    <div className="rounded-sm p-4 mt-4 mb-4 border-2 border-slate-400 w-full flex flex-col hover:border-teal-500">
       <div className="flex flex-col text-left">
         <p className="pl-0 pt-2">{params.content.university}</p>
         <p className="pl-0">{params.content.level}</p>
