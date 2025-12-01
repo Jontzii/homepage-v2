@@ -1,20 +1,20 @@
-import { inter, rubik } from "@/app/components/common/fonts";
-import { ScrollToAbout } from "./scrollToAbout";
+import { inter, rubik } from '@/app/components/common/fonts';
+import { ScrollToAbout } from './scrollToAbout';
 
 export async function LandingComponent() {
-  const emphasizeWord = "text-teal-500 font-bold selection:text-slate-900";
+  const emphasizeWord = 'text-teal-500 font-bold selection:text-slate-900';
 
   return (
-    <div id="top" className="w-full h-screen relative">
+    <div id="top" className="relative h-screen w-full">
       <div
         id="landing-text-holder"
-        className="h-full w-full flex flex-col justify-center items-center text-left pl-4 md:pl-0 pr-4 md:pr-0"
+        className="flex h-full w-full flex-col items-center justify-center pr-4 pl-4 text-left md:pr-0 md:pl-0"
       >
         <div className={`${rubik.variable} font-rubik`}>
-          <p className="text-xl md:text-3xl lg:text-4xl 2xl:text-5xl mb-1">
+          <p className="mb-1 text-xl md:text-3xl lg:text-4xl 2xl:text-5xl">
             HEY THERE,
             <br />
-            MY NAME IS{" "}
+            MY NAME IS{' '}
             <span className="text-teal-500 selection:text-slate-900">
               JOONAS HILTUNEN
             </span>
@@ -24,19 +24,19 @@ export async function LandingComponent() {
             I LIKE TO CREATE ALL KINDS OF SOFTWARE.
           </p>
           <p
-            className={`pt-2 text-xs sm:text-sm md:text-md lg:text-lg 2xl:text-xl ${inter.variable} font-inter`}
+            className={`md:text-md pt-2 text-xs sm:text-sm lg:text-lg 2xl:text-xl ${inter.variable} font-inter`}
           >
-            My specialities are{" "}
-            <span className={emphasizeWord}>full-stack</span> and{" "}
+            My specialities are{' '}
+            <span className={emphasizeWord}>full-stack</span> and{' '}
             <span className={emphasizeWord}>backend</span> development
             <br />
-            with <span className={emphasizeWord}>TypeScript</span> and{" "}
-            <span className={emphasizeWord}>C#</span>{" "}
+            with <span className={emphasizeWord}>TypeScript</span> and{' '}
+            <span className={emphasizeWord}>C#</span>{' '}
           </p>
         </div>
       </div>
 
-      <div className="w-full absolute bottom-32 md:bottom-8 flex justify-center items-center text-slate-400">
+      <div className="absolute bottom-32 flex w-full items-center justify-center text-slate-400 md:bottom-8">
         <ScrollToAbout />
       </div>
     </div>

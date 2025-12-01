@@ -1,17 +1,17 @@
-import IconGitHub from "@/app/assets/icon/iconGithub";
-import IconLinkedIn from "@/app/assets/icon/iconLinkedIn";
-import profilePic from "@/public/img/profilepic.webp";
-import Image from "next/image";
-import { LinkIconWrapper } from "./linkIconWrapper";
+import IconGitHub from '@/app/assets/icon/iconGithub';
+import IconLinkedIn from '@/app/assets/icon/iconLinkedIn';
+import profilePic from '@/public/img/profilepic.webp';
+import Image from 'next/image';
+import { LinkIconWrapper } from './linkIconWrapper';
 
 export async function AboutComponent() {
   return (
     <div
       id="about"
-      className="w-full h-full text-center pt-12 lg:pt-24 pb-12 lg:pb-24 flex flex-col lg:flex-row justify-center items-center"
+      className="flex h-full w-full flex-col items-center justify-center pt-12 pb-12 text-center lg:flex-row lg:pt-24 lg:pb-24"
     >
-      <div className="w-full lg:w-1/2 p-4 flex justify-center lg:justify-end">
-        <div className="w-full md:w-4/5 lg:w-full xl:w-4/5 2xl:w-4/5 mr-0 lg:ml-8 lg:mr-4 xl:ml-16 xl:mr-16 flex flex-row justify-center">
+      <div className="flex w-full justify-center p-4 lg:w-1/2 lg:justify-end">
+        <div className="mr-0 flex w-full flex-row justify-center md:w-4/5 lg:mr-4 lg:ml-8 lg:w-full xl:mr-16 xl:ml-16 xl:w-4/5 2xl:w-4/5">
           <div className="w-2/3 overflow-hidden rounded-full">
             <Image
               src={profilePic}
@@ -24,9 +24,9 @@ export async function AboutComponent() {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-1/2 p-4 flex justify-center lg:justify-start">
-        <div className="w-full md:w-4/5 lg:w-full xl:w-4/5 4xl:w-3/5 ml-0 lg:ml-4 lg:mr-8 xl:ml-16 xl:mr-16 flex flex-col justify-center lg:text-left">
-          <p className="text-sm md:text-md lg:text-lg 2xl:text-xl 3xl:text-3xl">
+      <div className="flex w-full justify-center p-4 lg:w-1/2 lg:justify-start">
+        <div className="4xl:w-3/5 ml-0 flex w-full flex-col justify-center md:w-4/5 lg:mr-8 lg:ml-4 lg:w-full lg:text-left xl:mr-16 xl:ml-16 xl:w-4/5">
+          <p className="md:text-md 3xl:text-3xl text-sm lg:text-lg 2xl:text-xl">
             My name is Joonas Hiltunen, but I&apos;m also known as
             &quot;Jontzi&quot; online. I am a versatile full-stack software
             developer with over six years of comprehensive experience in various
@@ -39,20 +39,20 @@ export async function AboutComponent() {
             different e-commerce solutions, and in expanding my expertise in
             different cloud technologies.
           </p>
-          <div className="pt-8 flex flex-col justify-center lg:justify-start">
-            <p className="text-sm md:text-md lg:text-lg 2xl:text-xl 3xl:text-3xl">
+          <div className="flex flex-col justify-center pt-8 lg:justify-start">
+            <p className="md:text-md 3xl:text-3xl text-sm lg:text-lg 2xl:text-xl">
               Lets get in touch
             </p>
             <div className="flex justify-center lg:justify-start">
               <LinkIconWrapper
                 params={{
-                  href: "https://www.github.com/jontzii",
+                  href: 'https://www.github.com/jontzii',
                   icon: <IconGitHub />,
                 }}
               />
               <LinkIconWrapper
                 params={{
-                  href: "https://www.linkedin.com/in/joohiltunen/",
+                  href: 'https://www.linkedin.com/in/joohiltunen/',
                   icon: <IconLinkedIn />,
                 }}
               />
