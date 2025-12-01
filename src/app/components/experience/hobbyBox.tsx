@@ -6,17 +6,17 @@ export async function HobbyBox({
   };
 }) {
   return (
-    <div className="rounded-sm p-4 mt-4 mb-4 border-2 border-slate-400 w-full flex flex-col hover:border-teal-500">
+    <div className="mt-4 mb-4 flex w-full flex-col rounded-sm border-2 border-slate-400 p-4 hover:border-teal-500">
       <div className="flex flex-col text-left">
         {params.content.map((x, i, arr) => {
-          let className = "";
+          let className = '';
 
           if (i === 0) {
-            className += "pt-2";
+            className += 'pt-2';
           }
 
           if (i === arr.length - 1) {
-            className += "pb-2";
+            className += 'pb-2';
           }
 
           return (

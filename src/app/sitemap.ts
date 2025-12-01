@@ -1,17 +1,17 @@
-import { MetadataRoute } from "next";
+import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://joonashiltunen.fi",
+      url: 'https://joonashiltunen.fi',
       lastModified: new Date(),
-      changeFrequency: "monthly",
+      changeFrequency: 'monthly',
       priority: 1,
     },
     {
-      url: "https://joonashiltunen.fi/resume.pdf",
+      url: 'https://joonashiltunen.fi/resume.pdf',
       lastModified: new Date(),
-      changeFrequency: "monthly",
+      changeFrequency: 'monthly',
       priority: 0.5,
     },
   ];
