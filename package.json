@@ -1,6 +1,6 @@
 {
   "name": "joonashiltunenfi",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -21,7 +21,7 @@
     "@types/node": "^24",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "eslint": "^8",
+    "eslint": "^9",
     "eslint-config-next": "^15",
     "tailwindcss": "^4.1.17",
     "typescript": "^5"
