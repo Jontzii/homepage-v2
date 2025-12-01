@@ -1,12 +1,12 @@
-import Link from "next/link";
-import ExperienceBox from "@/app/components/experience/experienceBox";
-import EducationBox from "@/app/components/experience/educationBox";
-import HobbyBox from "@/app/components/experience/hobbyBox";
 import { workDescription } from "@/app/assets/content/workDescription";
-import CertificationBox from "./certificationBox";
-import ProjectBox from "./projectBox";
+import Link from "next/link";
+import { CertificationBox } from "./certificationBox";
+import { EducationBox } from "./educationBox";
+import { ExperienceBox } from "./experienceBox";
+import { HobbyBox } from "./hobbyBox";
+import { ProjectBox } from "./projectBox";
 
-export default function ExperienceComponent() {
+export function ExperienceComponent() {
   const workExperience = workDescription();
 
   return (
@@ -48,9 +48,7 @@ export default function ExperienceComponent() {
           <ProjectBox
             params={{ content: workExperience.project.flightrandomizer }}
           />
-          <ProjectBox
-            params={{ content: workExperience.project.getaroom }}
-          />
+          <ProjectBox params={{ content: workExperience.project.getaroom }} />
 
           <p className="text-md lg:text-lg 2xl:text-xl 3xl:text-3xl pt-8 pb-4">
             Hobbies / Other Interests

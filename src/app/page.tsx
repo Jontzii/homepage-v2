@@ -1,10 +1,8 @@
-import CursorComponent from "@/app/components/common/cursorComponent";
-import LandingComponent from "@/app/components/landing/landingComponent";
-import AboutComponent from "@/app/components/about/aboutComponent";
-import ExperienceComponent from "@/app/components/experience/experienceComponent";
-import BottomButton from "@/app/components/common/bottomButton";
-import BottomText from "./components/common/bottomText";
 import { inter } from "@/app/components/common/fonts";
+import { AboutComponent } from "./components/about";
+import { BottomButton, BottomText, CursorComponent } from "./components/common";
+import { ExperienceComponent } from "./components/experience";
+import { LandingComponent } from "./components/landing";
 
 export default function Home() {
   return (

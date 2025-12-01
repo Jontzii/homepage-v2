@@ -1,3 +1,7 @@
-export default function BottomText() {
-  return <div className="w-full flex justify-center pb-8">Joonas Hiltunen © 2024</div>;
+export function BottomText() {
+  return (
+    <div className="w-full flex justify-center pb-8">
+      Joonas Hiltunen © 2024
+    </div>
+  );
 }

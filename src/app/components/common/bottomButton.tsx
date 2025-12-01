@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react";
 import ChevronUp from "@/app/assets/icon/chevronUp";
+import { useEffect, useState } from "react";
 
-export default function BottomButton() {
+export function BottomButton() {
   const [visible, setVisible] = useState(false);
 
   const toggleVisible = () => {
@@ -17,16 +17,16 @@ export default function BottomButton() {
 
   const scrollToTop = () => {
     if (typeof window !== "undefined") {
-       window.scrollTo({
-         top: 0,
-         behavior: "smooth",
-       });
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     }
   };
 
   useEffect(() => {
     window.addEventListener("scroll", toggleVisible);
-  }, [])
+  }, []);
 
   return (
     <div

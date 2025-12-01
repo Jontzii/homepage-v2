@@ -1,10 +1,10 @@
-import type { Metadata } from 'next'
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Inter } from 'next/font/google'
-import './globals.css'
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Joonas Hiltunen",
@@ -32,16 +32,16 @@ export const metadata: Metadata = {
     "Ohjelmistokehittäjä",
     "Joonas Hiltunen Homepage",
     "Joonas Hiltunen Developer",
-    "Joonas Hiltunen LinkedIn"
+    "Joonas Hiltunen LinkedIn",
   ],
   authors: [{ name: "Joonas Hiltunen", url: "https://joonashiltunen.fi" }],
-  creator: "Joonas Hiltunen <joonas@jontzi.com>",
+  creator: "Joonas Hiltunen <joonas@hiltunen.email>",
 };
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">

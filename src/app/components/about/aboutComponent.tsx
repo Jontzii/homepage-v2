@@ -1,10 +1,10 @@
-import Image from "next/image";
-import LinkIconWrapper from "@/app/components/about/linkIconWrapper";
-import profilePic from "@/public/img/profilepic.webp";
 import IconGitHub from "@/app/assets/icon/iconGithub";
 import IconLinkedIn from "@/app/assets/icon/iconLinkedIn";
+import profilePic from "@/public/img/profilepic.webp";
+import Image from "next/image";
+import { LinkIconWrapper } from "./linkIconWrapper";
 
-export default function AboutComponent() {
+export function AboutComponent() {
   return (
     <div
       id="about"

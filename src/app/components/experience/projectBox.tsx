@@ -1,15 +1,15 @@
-import Link from "next/link";
 import ExternalLink from "@/app/assets/icon/externalLink";
 import IconGitHub from "@/app/assets/icon/iconGithub";
 import { Project } from "@/app/types/experienceType";
+import Link from "next/link";
 
-export default function ProjectBox({
+export function ProjectBox({
   params,
 }: {
   params: {
     content: Project;
   };
-  }) {
+}) {
   const makeId = (length: number) => {
     let result = "";
     const characters =
@@ -22,7 +22,7 @@ export default function ProjectBox({
     }
     return result;
   };
-  
+
   return (
     <div className="rounded p-4 mt-4 mb-4 border-2 border-slate-400 w-full flex flex-col hover:border-teal-500">
       <div className="flex flex-col text-left">

@@ -1,6 +1,6 @@
 import AnimatedCursor from "react-animated-cursor";
 
-export default function CursorComponent() {
+export function CursorComponent() {
   return (
     <AnimatedCursor
       innerSize={0}
@@ -10,8 +10,7 @@ export default function CursorComponent() {
       outerAlpha={1}
       outerStyle={{
         mixBlendMode: "exclusion",
-        background:
-          "radial-gradient(rgba(29, 78, 216, 0.15), transparent 70%)",
+        background: "radial-gradient(rgba(29, 78, 216, 0.15), transparent 70%)",
       }}
       trailingSpeed={1}
       showSystemCursor

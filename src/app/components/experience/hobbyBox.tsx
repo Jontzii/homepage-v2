@@ -1,4 +1,4 @@
-export default function HobbyBox({
+export function HobbyBox({
   params,
 }: {
   params: {
