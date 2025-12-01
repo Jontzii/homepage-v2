@@ -1,6 +1,6 @@
 import { EducationExperience } from "@/app/types/experienceType";
 
-export default function EducationBox({
+export function EducationBox({
   params,
 }: {
   params: {

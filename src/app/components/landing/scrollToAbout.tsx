@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import Link from "next/link";
 import ArrowDownCircle from "@/app/assets/icon/arrowDownCircle";
+import Link from "next/link";
 
-export default function ScrollToAbout() {
+export function ScrollToAbout() {
   return (
     <Link
       href="#about"

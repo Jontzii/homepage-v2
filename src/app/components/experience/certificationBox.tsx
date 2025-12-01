@@ -1,8 +1,8 @@
-import Link from "next/link";
 import ExternalLink from "@/app/assets/icon/externalLink";
 import { Certification } from "@/app/types/experienceType";
+import Link from "next/link";
 
-export default function CertificationBox({
+export function CertificationBox({
   params,
 }: {
   params: {

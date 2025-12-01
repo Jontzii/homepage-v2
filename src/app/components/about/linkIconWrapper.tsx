@@ -1,10 +1,12 @@
 import Link from "next/link";
 
-export default function LinkIconWrapper({ params }: {
+export function LinkIconWrapper({
+  params,
+}: {
   params: {
     href: string;
-    icon: JSX.Element
-  }
+    icon: JSX.Element;
+  };
 }) {
   return (
     <Link
