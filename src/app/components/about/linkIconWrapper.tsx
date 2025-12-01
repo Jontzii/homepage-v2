@@ -5,7 +5,7 @@ export async function LinkIconWrapper({
 }: {
   params: {
     href: string;
-    icon: JSX.Element;
+    icon: React.JSX.Element;
   };
 }) {
   return (
