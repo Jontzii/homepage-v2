@@ -1,4 +1,4 @@
-export function HobbyBox({
+export async function HobbyBox({
   params,
 }: {
   params: {

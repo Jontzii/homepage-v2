@@ -6,7 +6,7 @@ import { ExperienceBox } from "./experienceBox";
 import { HobbyBox } from "./hobbyBox";
 import { ProjectBox } from "./projectBox";
 
-export function ExperienceComponent() {
+export async function ExperienceComponent() {
   const workExperience = workDescription();
 
   return (

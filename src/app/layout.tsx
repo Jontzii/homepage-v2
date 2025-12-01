@@ -6,6 +6,8 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const dynamic = "force-static";
+
 export const metadata: Metadata = {
   title: "Joonas Hiltunen",
   description: "Homepage of Joonas Hiltunen",

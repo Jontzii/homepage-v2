@@ -1,6 +1,6 @@
 import { WorkExperience } from "@/app/types/experienceType";
 
-export function ExperienceBox({
+export async function ExperienceBox({
   params,
 }: {
   params: {
