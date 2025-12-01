@@ -1,6 +1,6 @@
 import { EducationExperience } from "@/app/types/experienceType";
 
-export function EducationBox({
+export async function EducationBox({
   params,
 }: {
   params: {

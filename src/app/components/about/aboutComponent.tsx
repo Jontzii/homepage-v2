@@ -4,7 +4,7 @@ import profilePic from "@/public/img/profilepic.webp";
 import Image from "next/image";
 import { LinkIconWrapper } from "./linkIconWrapper";
 
-export function AboutComponent() {
+export async function AboutComponent() {
   return (
     <div
       id="about"

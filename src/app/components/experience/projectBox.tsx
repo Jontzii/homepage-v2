@@ -3,7 +3,7 @@ import IconGitHub from "@/app/assets/icon/iconGithub";
 import { Project } from "@/app/types/experienceType";
 import Link from "next/link";
 
-export function ProjectBox({
+export async function ProjectBox({
   params,
 }: {
   params: {

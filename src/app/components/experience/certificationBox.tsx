@@ -2,7 +2,7 @@ import ExternalLink from "@/app/assets/icon/externalLink";
 import { Certification } from "@/app/types/experienceType";
 import Link from "next/link";
 
-export function CertificationBox({
+export async function CertificationBox({
   params,
 }: {
   params: {

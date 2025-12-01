@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export function LinkIconWrapper({
+export async function LinkIconWrapper({
   params,
 }: {
   params: {

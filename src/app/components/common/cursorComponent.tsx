@@ -1,6 +1,6 @@
 import AnimatedCursor from "react-animated-cursor";
 
-export function CursorComponent() {
+export async function CursorComponent() {
   return (
     <AnimatedCursor
       innerSize={0}
