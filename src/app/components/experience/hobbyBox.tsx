@@ -6,7 +6,7 @@ export async function HobbyBox({
   };
 }) {
   return (
-    <div className="rounded p-4 mt-4 mb-4 border-2 border-slate-400 w-full flex flex-col hover:border-teal-500">
+    <div className="rounded-sm p-4 mt-4 mb-4 border-2 border-slate-400 w-full flex flex-col hover:border-teal-500">
       <div className="flex flex-col text-left">
         {params.content.map((x, i, arr) => {
           let className = "";

@@ -24,7 +24,7 @@ export async function ProjectBox({
   };
 
   return (
-    <div className="rounded p-4 mt-4 mb-4 border-2 border-slate-400 w-full flex flex-col hover:border-teal-500">
+    <div className="rounded-sm p-4 mt-4 mb-4 border-2 border-slate-400 w-full flex flex-col hover:border-teal-500">
       <div className="flex flex-col text-left">
         <div className="flex flex-col text-left">
           <p className="pl-0 pt-2 pb-4">{params.content.name}</p>
